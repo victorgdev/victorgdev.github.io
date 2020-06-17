@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Victor Goncalves</title>
+	<link rel="icon" href="images/logo2.png" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- LOCAL STYLES -->
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<!-- HOSTED STYLES -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- HOSTED SCRIPTS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- LOCAL SCRIPTS -->
+	<script defer src="JS/index.js"></script>
+
+</head>
+
+<body>
+	<!-- NAV BAR -->
+	<div id="navbar" class="div-nav-bar">
+		<a class="anchor-img" href="#welcome-section"><img class="nav-logo animated fadeIn" src="images/logo2.png"></a>
+		<nav id="nav-bar" class="nav">
+			<ul class="nav-list">
+				<li><a class="nav-btn" href="#welcome-section">HOME</a></li>
+				<li><a class="nav-btn" href="#about-section">ABOUT</a></li>
+				<li><a class="nav-btn" href="#projects-section">WORK</a></li>
+				<li><a class="nav-btn" href="#contact-section">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- WELCOME SECTION -->
+	<div id="welcome-section" class="welcome-section">
+		<h2 class="welcome-text animated slideInLeft">Hello, I'm <a class="my-name">Victor Goncalves</a>.
+			<br>I'm a front-end web developer.</h2>
+		<div class="div-btn-welcome-section animated slideInRight slow">
+			<a class="btn-welcome-section" href="#about-section">VIEW MY WORK</a>
+		</div>
+		<div class="video-container">
+			<div class="color-overlay"></div>
+			<video autoplay loop muted>
+				<source src="videos/canvas.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<!-- ABOUT SECTION -->
+	<section id="about-section" class="about-section">
+		<h2 class="about-section-header animated fadeInLeft">ABOUT</h2>
+		<div class="about-title-bar animated fadeInRight"></div>
+		<div class="about-grid">
+			<div class="about-container">
+				<img id="icon-image" src="icons/responsive.png">
+				<h3 class="grid-title">RESPONSIVE</h3>
+				<p class="grid-text">Layouts to fit any screen, big or small.</p>
+			</div>
+			<div class="about-container">
+				<img id="icon-image" src="icons/intuitive.png">
+				<h3 class="grid-title">INTUITIVE</h3>
+				<p class="grid-text">Easy to use layouts equals effectiveness.</p>
+			</div>
+			<div class="about-container">
+				<img id="icon-image" src="icons/fast.png">
+				<h3 class="grid-title">FAST</h3>
+				<p class="grid-text">Fast load times and lag free interaction.</p>
+			</div>
+			<div class="about-container">
+				<img id="icon-image" src="icons/dynamic.png">
+				<h3 class="grid-title">DYNAMIC</h3>
+				<p class="grid-text">Interactive web pages that come to life.</p>
+			</div>
+			<div class="about-text-container">
+				<div class="about-text-div">
+					<h3 id="text-title">RESULTS ORIENTED</h3>
+					<p class="about-text">I am a self-taught programmer, who uses continuous iteration to produce
+						results quickly and enhance adaptability.</p>
+				</div>
+				<div class="langIcon-container">
+					<div class="lang-logo-container">
+						<img id="lang-logo" src="icons/html5.png" alt="HTML">
+					</div>
+					<div class="lang-logo-container">
+						<img id="lang-logo" src="icons/css3.png" alt="CSS">
+					</div>
+					<div class="lang-logo-container">
+						<img id="lang-logo" src="icons/js.png" alt="JS">
+					</div>
+					<div class="lang-logo-container">
+						<img id="lang-logo"
+							src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="REACT">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PROJECTS SECTION -->
+	<section id="projects-section" class="projects-section">
+		<h2 class="projects-section-header animated fadeInLeft">PROJECTS</h2>
+		<div class="projects-title-bar animated fadeInRight"></div>
+		<div class="projects-grid">
+			<div class="project-container animated fadeInUp">
+				<img class="project-image" src="images/websites.png" />
+				<div class="overlay">
+					<div class="project-tile" href=>
+						<a class="project-desc">Portfolio</a>
+						<p class="project-language">Websites</p>
+						<a href="wbs-portfolio.htm"><button class="project-more-btn">LEARN MORE</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="project-container animated fadeInDown">
+				<img class="project-image" src="images/atty.png" />
+				<div class="overlay">
+					<div class="project-tile">
+						<a class="project-desc">Atty</a>
+						<p class="project-language">Legal Case Management System</p>
+						<button data-modal-target="#modald" class="project-more-btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+			<div class="project-container animated fadeInRight">
+				<img class="project-image" src="images/scrummer.png" />
+				<div class="overlay">
+					<div class="project-tile">
+						<a class="project-desc">Scrumodoro</a>
+						<p class="project-language">Scrum Board w/ Pomodoro Clock</p>
+						<button data-modal-target="#modalc" class="project-more-btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+			<div class="project-container animated fadeInLeft">
+				<img class="project-image" src="images/scoutive.png" />
+				<div class="overlay">
+					<div class="project-tile">
+						<a class="project-desc">Scoutive</a>
+						<p class="project-language">Sports Performance Analysis System</p>
+						<button data-modal-target="#modalb" class="project-more-btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+			<div class="project-container animated fadeInUp">
+				<img class="project-image" src="images/forefin.png" />
+				<div class="overlay">
+					<div class="project-tile">
+						<a class="project-desc">ForeFin</a>
+						<p class="project-language"> Small Business Forecasting</p>
+						<button data-modal-target="#modala" class="project-more-btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+			<div class="project-container animated fadeInDown">
+				<img class="project-image" src="images/foocal.png" />
+				<div class="overlay">
+					<div class="project-tile">
+						<a class="project-desc">FooCal</a>
+						<p class="project-language">Calories Tracking System</p>
+						<button data-modal-target="#modal" class="project-more-btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CONTACT SECTION -->
+	<section id="contact-section" class="contact-section">
+		<div class="contact-section-header">
+			<h2 class="contact-title animated fadeInLeft">CONTACT</h2>
+			<div class="contact-title-bar animated fadeInLeft"></div>
+			<p class="contact-text animated fadeInUp">Have a question or want to work together?</p>
+		</div>
+		<div class="survey-container">
+			<form id="contact-form" action="https://formspree.io/mjvaware" method="POST">
+				<input id="name" class="contact-name animated fadeInLeft slow" type="text" name="Name"
+					placeholder="Name"><br>
+				<input id="email" class="contact-email animated fadeInRight slow" type="email" name="_replyto"
+					placeholder="E-mail"><br>
+				<textarea id="textarea" class="contact-textarea animated fadeInUp slow" name="message"
+					placeholder="Your Message"></textarea><br>
+				<button id="my-form-button">Submit</button>
+				<p id="my-form-status"></p>
+			</form>
+		</div>
+	</section>
+	<!-- MODALS (POP-UPS) -->
+	<div class="modal" id="modald">
+		<div class="modal-img">
+			<img class="project-image" src='https://media.giphy.com/media/EBnTOYz5LFZesguqtI/giphy.gif' />
+		</div>
+		<div class="modal-header">
+			<div class="modal-title">ATTY</div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Legal Case Management System</div>
+		<div class="modal-body">
+			<p>Legal case management system for small law firms and independent lawyers.</p>
+			<!--<button class="modal-body-btn">GET IN TOUCH</button>-->
+		</div>
+	</div>
+	<!--<div class="modal" id="modale">
+		<div class="modal-img">
+			<div class="mySlides fade">
+				<div class="number-text">1/4</div>
+				<img src="images/atty.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<div class="number-text">2/4</div>
+				<img src="images/bgadvogada.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<div class="number-text">3/4</div>
+				<img src="images/foocal.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<div class="number-text">4/4</div>
+				<img src="images/scrummer.png" style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="modal-header">
+			<div><a href="#" class="modal-title">ATTY</a></div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Legal Case Management Software</div>
+		<div class="modal-body">
+			<p>System to help attorneys and law offices to manage legal cases from beginning to end. Streamline all the
+				aspects of a legal case in one system.</p>
+			<button class="modal-body-btn">Check It Out</button>
+			<button class="modal-body-btn">Source Code</button>
+		</div>
+	</div>-->
+	<div class="modal" id="modalc">
+		<div class="modal-img">
+			<img class="project-image"
+				src="https://media.giphy.com/media/EBnTOYz5LFZesguqtI/giphy.gif" />
+		</div>
+		<div class="modal-header">
+			<div class="modal-title">Scrumodoro</div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Scrum Board & Pomodoro Clock</div>
+		<div class="modal-body">
+			<p>Scrum board for project management with a Pomodoro clock to boost productivity.</p>
+			<!--<button class="modal-body-btn">GET IN TOUCH</button>-->
+		</div>
+	</div>
+	<div class="modal" id="modalb">
+		<div class="modal-img">
+			<img class="project-image"
+				src="https://media.giphy.com/media/EBnTOYz5LFZesguqtI/giphy.gif" />
+		</div>
+		<div class="modal-header">
+			<div class="modal-title">Scoutive</div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Sports Scouting System</div>
+		<div class="modal-body">
+			<p>Sports scouting done right! Objective performance analysis system.</p>
+			<!--<button class="modal-body-btn">GET IN TOUCH</button>-->
+		</div>
+	</div>
+	<div class="modal" id="modala">
+		<div class="modal-img">
+			<img class="project-image"
+				src="https://media.giphy.com/media/EBnTOYz5LFZesguqtI/giphy.gif" />
+		</div>
+		<div class="modal-header">
+			<div class="modal-title">ForeFin</div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Forecasting System</div>
+		<div class="modal-body">
+			<p>Small business finance forecasting system</p>
+			<!--<button class="modal-body-btn">GET IN TOUCH</button>-->
+		</div>
+	</div>
+	<div class="modal" id="modal">
+		<div class="modal-img">
+			<img class="project-image"
+				src="https://media.giphy.com/media/EBnTOYz5LFZesguqtI/giphy.gif" />
+		</div>
+		<div class="modal-header">
+			<div class="modal-title">FooCal</div>
+			<button data-close-btn class="modal-close-btn">&times;</button>
+		</div>
+		<div class="modal-subtitle">Food Calories Tracker</div>
+		<div class="modal-body">
+			<p>Food calories tracker for dieting right.</p>
+			<!--<button class="modal-body-btn">GET IN TOUCH</button>-->
+		</div>
+	</div>
+	<div class="" id="modal-overlay"></div>
+
+	<!-- FOOTER SECTION -->
+	<footer>
+		<div class="profile-div">
+			<div id="profile-link" class="square">
+				<a class="sm-icons" href="https://codepen.io/goncalvesvictor0"><img
+						src="https://i.postimg.cc/yN6JMm7f/codepen.png"></a>
+			</div>
+			<div id="profile-link" class="square">
+				<a class="sm-icons" href="https://github.com/victorgdev"><img
+						src="https://i.postimg.cc/9fx4CDMc/github.png"></a>
+			</div>
+			<div id="profile-link" class="square">
+				<a class="sm-icons" href="https://www.linkedin.com/in/victor-goncalves-mba-75829041/"><img
+						src="https://i.postimg.cc/4dmYdX7V/lin.png"></a>
+			</div>
+		</div>
+		<a class="anchor-img" href="#welcome-section"><img class="footer-logo animated fadeIn"
+			src="images/logo2.png"></a>
+			<p>&copy; Created by<a class="footer-name" href="#welcome-section"> victorgoncalves</a></p>
+			<img id="holy" src="images/holyfam.png" />
+	</footer>
+	<!-- SCRIPTS -->
+	<script src="JS/modal.js"></script>
+</body>
+
+</html>
