@@ -449,7 +449,9 @@ img {
 	display: block;
 	margin-top: 3rem;
 	max-width: 450px;
-	min-width: 320px;;
+	min-width: 300px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .lang-logo-container {
@@ -1034,9 +1036,10 @@ footer>p {
 }
 
 #holy {
+	margin: 0 auto;
 	max-width: 50px;
 	height: auto;
-	opacity: .1;
+	opacity: .05;
 }
 
 @media (max-width: 28.75em) {
